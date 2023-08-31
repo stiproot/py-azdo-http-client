@@ -1,0 +1,5 @@
+src/.env
+src/__pycache__/
+src/pyxi_azdo_http_client/__pycache__
+dist/
+pyxi_azdo_http_client.egg-info/

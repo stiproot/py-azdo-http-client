@@ -1,2 +1,2 @@
 # py-azdo-http-client
-A simple http client for the AzureDevOps API.
+A simple HTTP client for interacting with the AzureDevOps API.
