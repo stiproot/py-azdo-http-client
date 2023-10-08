@@ -15,7 +15,7 @@ class AzdoHttpClient:
         return self._client.get(url=url, headers=self.build_headers())
 
     def get_wis_with_wiql(self, query: dict[str, str]):
-        url = self._azdo_url_builder.build_workitem_detail_url()
+        url = self._azdo_url_builder.build_wiql_url()
         print(url)
         return self._client.post(url=url, headers=self.build_headers(), json=query)
 
