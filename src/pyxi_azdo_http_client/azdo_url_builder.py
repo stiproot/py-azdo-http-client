@@ -28,7 +28,6 @@ class AzdoUrlBuilder:
             .add_query_param("$expand", "all")
             .add_query_param("api-version", self._default_api_version)
         )
-
         return builder.build()
 
     def build_wiql_url(self) -> str:
@@ -38,5 +37,15 @@ class AzdoUrlBuilder:
             .add_path_segment("wiql")
             .add_query_param("api-version", self._default_api_version)
         )
+        return builder.build()
 
+    def build_work_items_list_url(self, ids: list[int]) -> str:
+        builder = (
+            self.base_url_builder()
+            .add_path_segment("wit")
+            .add_path_segment("workitems")
+            .add_query_param("ids", ",".join([str(id) for id in ids]))
+            .add_query_param("$expand", "all")
+            .add_query_param("api-version", self._default_api_version)
+        )
         return builder.build()

@@ -8,7 +8,7 @@ author_email = "stipcich.simon@gmail.com"
 url = "https://github.com/stiproot/py-azdo-http-client"
 license = "MIT"
 keywords = ["python", "package", "azuredevops", "beta"]
-version = "0.0.7"
+version = "0.0.8"
 
 with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
