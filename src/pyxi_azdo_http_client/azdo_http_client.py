@@ -22,7 +22,7 @@ class AzdoHttpClient:
     def get_wis_list(self, ids: list[int]):
         url = self._azdo_url_builder.build_work_items_list_url(ids)
         print(url)
-        return self._client.post(url=url, headers=self.build_headers())
+        return self._client.get(url=url, headers=self.build_headers())
 
     def build_headers(self) -> dict[str, str]:
         return {"Authorization": f"Basic {self._secret_provider.get_secret('API_KEY')}"}
