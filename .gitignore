@@ -1,5 +1,5 @@
 src/.env
 src/__pycache__/
-src/pyxi_azdo_http_client/__pycache__
+src/agnt_smth/__pycache__
 dist/
-pyxi_azdo_http_client.egg-info/
+agnt_smth.egg-info/

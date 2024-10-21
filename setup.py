@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
 
 # metadata...
-name = "pyxi_azdo_http_client"
+name = "agnt_smth"
 description = "A simple HTTP client for interacting with the AzureDevOps API."
 author = "Simon Stipcich"
 author_email = "stipcich.simon@gmail.com"
-url = "https://github.com/stiproot/py-azdo-http-client"
+url = "https://github.com/stiproot/agnt-smth"
 license = "MIT"
 keywords = ["python", "package", "azuredevops", "beta"]
 version = "0.0.9"
@@ -23,7 +23,7 @@ setup(
     name=name,
     version=version,
     packages=find_packages(where="src"),
-    package_dir={"pyxi_azdo_http_client": "src/pyxi_azdo_http_client"},
+    package_dir={"agnt_smth": "src/agnt_smth"},
     description=description,
     long_description=long_description,
     long_description_content_type="text/markdown",
