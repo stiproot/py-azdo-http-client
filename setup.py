@@ -2,20 +2,35 @@ from setuptools import setup, find_packages
 
 # metadata...
 name = "agnt_smth"
-description = "A simple HTTP client for interacting with the AzureDevOps API."
+description = (
+    "A simple agentic workflow builder framework, ontop of LangChain and LangGraph."
+)
 author = "Simon Stipcich"
 author_email = "stipcich.simon@gmail.com"
 url = "https://github.com/stiproot/agnt-smth"
 license = "MIT"
-keywords = ["python", "package", "azuredevops", "beta"]
-version = "0.0.9"
+keywords = ["python", "package", "lang-chain", "lang-graph" "beta"]
+version = "0.0.1"
 
 with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
 # dependencies...
 install_requires = [
-    "environs",
+    "langchain",
+    "langchain-community",
+    "langchainhub",
+    "langchain-chroma",
+    "langchain-openai",
+    "langchain-huggingface",
+    "bs4",
+    "chromadb",
+    "sentence-transformers",
+    "langgraph",
+    "langsmith",
+    "IPython",
+    "pydantic",
+    "rich",
 ]
 
 # setup...
