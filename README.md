@@ -1,3 +1,2 @@
-# agnt-smth
-
-A simple agentic workflow builder framework, ontop of LangChain and LangGraph.
+# py-azdo-http-client
+A simple HTTP client for interacting with the AzureDevOps API.
