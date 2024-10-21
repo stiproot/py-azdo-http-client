@@ -1,8 +1,8 @@
+from typing import List, Any
 from langchain.agents import AgentExecutor, create_openai_tools_agent
 from langchain_core.messages import BaseMessage, HumanMessage
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_openai import AzureChatOpenAI
-from typing import List, Any
 
 
 def create_assistant_agent(llm: AzureChatOpenAI, tools: list, system_message: str):

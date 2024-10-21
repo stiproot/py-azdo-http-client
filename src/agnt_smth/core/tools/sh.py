@@ -1,7 +1,7 @@
 from typing import Tuple
 from langchain_core.tools import tool
 import subprocess
-from common.utils.logger import log
+from ..utls import log
 
 
 @tool

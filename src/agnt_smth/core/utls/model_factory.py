@@ -1,5 +1,5 @@
 from langchain_openai import AzureChatOpenAI, AzureOpenAIEmbeddings
-from common.config_loader import load_openai_config
+from .config_loader import load_openai_config
 import os
 
 openai_config = load_openai_config()

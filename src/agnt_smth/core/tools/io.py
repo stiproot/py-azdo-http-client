@@ -1,7 +1,7 @@
 import os
 from typing import List, Dict
 from langchain_core.tools import tool
-from common.utils.logger import log
+from ..utls import log
 
 
 @tool

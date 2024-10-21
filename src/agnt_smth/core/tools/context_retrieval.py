@@ -10,12 +10,7 @@ from langchain_community.document_loaders import TextLoader
 from langchain.tools.retriever import create_retriever_tool
 from langchain_core.tools import BaseTool
 
-from common.model_factory import EmbeddingFactory
-from common.utils.logger import log
-from chroma.chroma_utils import (
-    create_retriever,
-    ChromaHttpClientFactory,
-)
+from ..utls import create_retriever, ChromaHttpClientFactory, log, EmbeddingFactory
 
 
 class RetrieveAdditionalContextToolSchema(BaseModel):

@@ -82,3 +82,4 @@ def create_retriever(
     retriever = vector_store.as_retriever()
 
     return retriever
+

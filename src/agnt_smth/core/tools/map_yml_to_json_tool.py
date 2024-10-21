@@ -3,7 +3,7 @@ import json
 from typing import Annotated, Type
 from pydantic import BaseModel, Field
 from langchain_core.tools import BaseTool
-from common.utils.logger import log
+from ..utls import log
 
 
 class MapYmlToJsonSchema(BaseModel):
